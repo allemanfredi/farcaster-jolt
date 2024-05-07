@@ -1,0 +1,15 @@
+[package]
+name = "farcaster-jolt-guest"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "guest"
+path = "./src/lib.rs"
+
+[features]
+guest = []
+
+[dependencies]
+jolt = { package = "jolt-sdk", git = "https://github.com/a16z/jolt" }
+ed25519-dalek = { version = "2.1.1", default-features = false }
